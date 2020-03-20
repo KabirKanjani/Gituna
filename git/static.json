@@ -1,0 +1,5 @@
+{
+  "root": "heroku static:deploy",
+  "clean_urls": false,
+  "error_page": "cc"
+}
