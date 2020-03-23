@@ -1,0 +1,3 @@
+<?php
+header("telegrambot.php");
+?>
