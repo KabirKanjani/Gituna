@@ -1,33 +1,38 @@
-<html>
-<html lang="en">
+<!--Header-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<link rel="Stylesheet" type="text/css" href="text.css">
-<title>Eyes</title>
-</head>
-<body>
-		<div class="eyes">
-		<div class="eye">
-	<div class="ball"></div>
-		</div>
-		<div class="eye">
-		<div class="ball"></div>
-		</div>
-		</div>
-		<script>
+<meta charset="utf-8">
+    <title>Header</title>
+    <link rel="Stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif|Roboto|Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="header">
+        <h2 class="logo">WebFlixers</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="showmenu"><i class="fas fa-ellipsis-h"></i></label>
+        <ul class="menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Connect</a>
+            <a href="#">Help</a>
+            <label for="chk" class="hidemenu">
+        <i class="fas fa-times"></i></label>
+        </ul>        
+        </div>
+        <div class="login">
+            			<table class="box">
+                <th><h1>Login</h1></th>
+                <tr><td><input type= "text" name="" placeholder="username" id="un"></td></tr>
+								<tr><td><input type="password" name="" placeholder="password" id="pw"></td></tr>
+                <tr><td><input type="submit" name="" value="login" ></td></tr>
+								<p id="p1">
+                </p>
+            </table>
 
-var  balls = document.getElementsByClassName("ball");
- document.onmousemove=function()
- {
-	var x= event.clientX*100/window.innerWidth+"%";
-	var y= event.clientY*100/window.innerHeight+"%";
-	for(var i=0;i<2;i++)
-	{
-	balls[i].style.left=x;
-	balls[i].style.top=y;
-	balls[i].style.transform="translate(-"+x+",-"+y+")";
-	}
- }
-</script>
-
-</body>
+        </div>
+    </body>
 </html>
