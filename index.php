@@ -1,3 +1,3 @@
 <?php
-header("telegrambot.php");
+header("index.html");
 ?>
