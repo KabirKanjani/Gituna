@@ -1,4 +1,3 @@
 <?php 
-header("telegrambot.php");
-echo "Hello World";
+ include_once("telegrambot.php"); 
 ?>
